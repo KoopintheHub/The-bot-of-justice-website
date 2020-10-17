@@ -64,6 +64,9 @@
       var darken = false;
       var runningOnMobile = false;
       var device = navigator.userAgent;
+      
+      const params = new URLSearchParams(window.location.search);
+      
       if (device.match(/Android/i)
        || device.match(/webOS/i)
        || device.match(/iPhone/i)
@@ -88,6 +91,12 @@
           allowToPressButton = true;
           document.getElementById('darken').style = "pointer-events: none; background: rgba(0,0,0,0); width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 15; transition: 0.5s";
           document.getElementById('darken').innerHTML = "";
+        }
+      }
+      
+      function boot() {
+        if (params.get('test') == "true") {
+          alert("test");
         }
       }
     </script>
