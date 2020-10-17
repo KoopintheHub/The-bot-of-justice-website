@@ -9,19 +9,53 @@
     <style>
       body {
         font-family: Arial;
-          user-select: none;
-          -webkit-user-select: none;
-          -khtml-user-select: none;
-          -moz-user-select: none;
-          -ms-user-select: none;
+        user-select: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
         background-color: #0f1036;
       }
+      .border {
+        background: rgba(255, 255, 255, 0.5);
+        border: 1px solid #000000;
+        padding: 5px;
+      }
     </style>
+    <script>
+      // Variables
+      var darken = false;
+      var runningOnMobile = false;
+      var device = navigator.userAgent;
+      if (device.match(/Android/i)
+       || device.match(/webOS/i)
+       || device.match(/iPhone/i)
+       || device.match(/iPad/i)
+       || device.match(/iPod/i)
+       || device.match(/BlackBerry/i)
+       || device.match(/Windows Phone/i)){
+        runningOnMobile = true;
+      }
+      var dialog = document.getElementById('darken');
+      var code = document.getElementById('codeBox').value;
+      
+      // Functions
+      function displayDialog(string, buttonNum) {
+        if (!darken) {
+          darken = true;
+          dialog.style = "pointer-events: all; background: rgba(0,0,0,0.5); width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 15";
+          dialog.innerHTML = "<div class=\"border\" style=\"opacity: 1; display: block; width: 50%; height: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)\">" + string + "</div>";
+        }
+      }
+    </script>
   </head>
   <body>
+    <div id="darken" style="pointer-events: none; background: rgba(0,0,0,0); width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 15">
+    </div>
     <div style="border-radius: 20px; background-color: #3e4075; margin: auto; padding: 10px; width: 85%; height: 170px; font-weight: bold; font-size: 48px; color: #ffffff; text-align: center; text-transform: uppercase">
       <p>Welcome to the bot of justice!</p>
       <p style="font-size: 16px;">A great bot that will make your server magical!</p>
     </div>
+    <button onclick="displayDialog(\"test\");">clicc me</button>
   </body>
 </html>
