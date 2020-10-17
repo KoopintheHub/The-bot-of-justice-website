@@ -25,13 +25,16 @@
           background-color: #601887;
           border: none;
           color: white;
-          padding: 15px 27px;
+          // padding: 15px 27px;
           text-align: center;
           text-decoration: none;
           display: inline-block;
           font-size: 16px;
           margin: 4px 2px;
           cursor: pointer;
+      }
+      .nonDlgButton {
+        padding: 15px 27px;
       }
       button:hover {
         background-color: #3d0d57;
@@ -77,6 +80,6 @@
       <p>Welcome to the bot of justice!</p>
       <p style="font-size: 16px;">A great bot that will make your server magical!</p>
     </div>
-    <button onclick="if (allowToPressButton) displayDialog(`test`);">clicc me</button>
+    <button class="nonDlgButton" onclick="if (allowToPressButton) displayDialog(`test`);">clicc me</button>
   </body>
 </html>
