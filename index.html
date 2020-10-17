@@ -37,7 +37,7 @@
         runningOnMobile = true;
       }
       var dialog = document.getElementById('darken');
-      var code = document.getElementById('codeBox').value;
+      var code = document.getElementById('codeBox');
       
       // Functions
       function displayDialog(string, buttonNum) {
@@ -56,6 +56,6 @@
       <p>Welcome to the bot of justice!</p>
       <p style="font-size: 16px;">A great bot that will make your server magical!</p>
     </div>
-    <button onclick="displayDialog(\"test\");">clicc me</button>
+    <button onclick="displayDialog(`test`);">clicc me</button>
   </body>
 </html>
