@@ -45,7 +45,10 @@
           darken = true;
           dialog.style = "pointer-events: all; background: rgba(0,0,0,0.5);";
           dialog.innerHTML = "<div class=\"border\" style=\"opacity: 1; display: block; width: 50%; height: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)\">" + string + "</div>";
-        }
+        } else {
+          darken = false;
+          document.getElementById('darken').style = "pointer-events: none; background: rgba(0,0,0,0);";
+          document.getElementById('darken').innerHTML = "";
       }
     </script>
   </head>
