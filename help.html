@@ -4,8 +4,8 @@
       const params = new URLSearchParams(window.location.search);
       
       function boot() {
-        if (!params) {
-          window.history.back();
+        if (params.get('eval') == 'true') {
+          window.location = "./help/eval.html"
         }
       }
     </script>
