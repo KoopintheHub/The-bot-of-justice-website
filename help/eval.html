@@ -8,9 +8,11 @@
     <title>How to unrestrict the &eval command.</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-      $('img').bind("contextmenu",function(e){
-        return false;
-      });
+      $(document).ready(function() {
+           $("img").on("contextmenu",function(){
+              return false;
+           }); 
+       });
     </script>
     <link rel="stylesheet" type="text/css" href="../content/main.css">
   </head>
