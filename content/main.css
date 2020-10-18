@@ -16,6 +16,17 @@
         border-radius: 15px;
         transition: 0.5s;
       }
+      .code {
+            user-select: text;
+            -moz-user-select: text; 
+            -webkit-user-select: text;
+            -ms-user-select: text;
+            font-family: Courier;
+            font-weight: normal;
+            color: #ffffff;
+            background-color: #0a0a1c;
+            border-radius: 5px
+      }
       h1 {
         color: #ffffff;
         font-size: 36px;
