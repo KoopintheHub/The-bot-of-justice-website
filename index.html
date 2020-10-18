@@ -7,11 +7,13 @@
     <link href="./content/icon.png" rel="icon">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" type="text/css" href="./content/main.css">
+    <script src="./content/dialog.js"></script>
     <script>
       // Variables
       var darken = false;
       var runningOnMobile = false;
       var device = navigator.userAgent;
+      darkenEl = document.getElementById('darken');
       
       const params = new URLSearchParams(window.location.search);
       
@@ -28,7 +30,7 @@
       var allowToPressButton = true;
       
       // Functions
-      function displayDialog(string, buttonNum) {
+      /* function displayDialog(string, buttonNum) {
         if (!darken) {
           darken = true;
           allowToPressButton = false;
@@ -40,7 +42,7 @@
           document.getElementById('darken').style = "pointer-events: none; background: rgba(0,0,0,0); width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 15; transition: 0.5s";
           document.getElementById('darken').innerHTML = "";
         }
-      }
+      } */
       
       function boot() {
         if (params.get('test') == "true") {
