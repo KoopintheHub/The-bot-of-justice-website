@@ -1,0 +1,51 @@
+      body {
+        font-family: Arial;
+        user-select: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        background-color: #0f1036;
+      }
+      .border {
+        background: #2a51eb;
+        border: 3px solid #ffffff;
+        padding: 5px;
+        color: #ffffff;
+        font-weight: bold;
+        border-radius: 15px;
+        transition: 0.5s;
+      }
+      h1 {
+        color: #ffffff;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .pgraph {
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+      }
+      button {
+        font-weight: bold;
+        background-color: #601887;
+        border: none;
+        color: white;
+        // padding: 15px 27px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      .nonDlgButton {
+        padding: 15px 27px;
+        display: inline-block;
+      }
+      button:hover {
+        background-color: #3d0d57;
+        transition: 0.5s;
+      }
