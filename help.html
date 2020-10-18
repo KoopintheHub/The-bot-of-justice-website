@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      
+      function boot() {
+        if (!params) {
+          window.history.back();
+        }
+      }
+    </script>
+  </head>
+  <body onload="boot();">
+  </body>
+</html>
