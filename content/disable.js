@@ -1,8 +1,8 @@
 $(document).ready(function() {
-  $('body').on('contextmenu', function() {
+  $('img').on('contextmenu', function() {
     return false;
   });
-  $('body').on('dragstart', function() {
+  $('img').on('dragstart', function() {
     return false;
   });
 });
