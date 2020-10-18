@@ -5,8 +5,9 @@
       
       function boot() {
         if (params.get('eval') == "true") {
-          window.location.replace('help/eval.html');
+          window.location.replace('help/eval');
         }
+        window.history.back();
       }
     </script>
   </head>
