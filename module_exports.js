@@ -48,3 +48,8 @@ function sendWithReact(msg, string) {
 		if (string.charAt(i).toLowerCase() == "z") msg.react("🇿");
 	}
 }
+
+module.exports {
+	sendWithEditStyle: sendWithEditStyle,
+	sendInEmbed, sendInEmbed
+}
