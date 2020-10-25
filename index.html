@@ -12,7 +12,9 @@
     <script src="./content/dialog.js"></script>
     <script src="./content/variables.js"></script>
     <script>
-      // Functions
+      if (runningOnMobile) {
+        document.getElementById('click').innerHTML = "Tap";
+      }
       function boot() {
         if (params.get('test') == "true") {
           alert("test");
@@ -38,7 +40,7 @@
       restricted due to it might mess up the server even if you are not the owner of the server<br>
       because codes that members aren't allowed to do aren't all restricted so do be careful.<br>
       <br>
-      Click <a href="help?eval=true">here</a> see how to unrestrict this command.
+      <span id="click">Click</span> <a href="help?eval=true">here</a> see how to unrestrict this command.
     </p>
   </body>
 </html>
